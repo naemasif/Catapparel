@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatApparel - Trendy Print Shirts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">CatApparel</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products" class="section-products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <!-- Product carousel goes here -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <!-- Product 1 -->
+                    <div class="product">
+                        <img src="images/shirt1.avif" alt="Cat Print Shirt">
+                        <h3>Cat Print Shirt</h3>
+                        <p>$25</p>
+                        <p>Rating: ★★★★☆</p>
+                        <button class="btn" onclick="addToCart('Cat Print Shirt', 25)">Add to Cart</button>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product">
+                        <img src="images/shirt1.avif" alt="Kitty Casual Tee">
+                        <h3>Kitty Casual Tee</h3>
+                        <p>$30</p>
+                        <p>Rating: ★★★★☆</p>
+                        <button class="btn" onclick="addToCart('Kitty Casual Tee', 30)">Add to Cart</button>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product">
+                        <img src="images/shirt1.avif" alt="Cool Cat Hoodie">
+                        <h3>Cool Cat Hoodie</h3>
+                        <p>$40</p>
+                        <p>Rating: ★★★★★</p>
+                        <button class="btn" onclick="addToCart('Cool Cat Hoodie', 40)">Add to Cart</button>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product">
+                        <img src="images/shirt1.avif" alt="Classic Cat T-shirt">
+                        <h3>Classic Cat T-shirt</h3>
+                        <p>$35</p>
+                        <p>Rating: ★★★☆☆</p>
+                        <button class="btn" onclick="addToCart('Classic Cat T-shirt', 35)">Add to Cart</button>
+                    </div>
+                    <!-- Add more products similarly -->
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
